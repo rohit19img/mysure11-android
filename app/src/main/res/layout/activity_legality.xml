@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Static.LegalityActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MySure11 takes great care to comply with all central and state legislation in India to ensure that our users are fully protected. Every contest on our platform is carefully designed to comply with applicable statutes and regulations in India."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Below are the key points from an Indian High Court’s judgement specifically regarding MySure11's game. A challenge to this judgement was also dismissed by the Supreme Court of India:"
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="The Court, in its ruling, stated that playing the MySure11 game involves considerable skill, judgement and discretion and that success on MySure11 arises out of users’ exercise, superior knowledge, judgment and attention"
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="The Court also held that ‘the element of skill’ had a predominant influence on the outcome of the MySure11 game, which follows the following format:
+\nParticipants have to choose a team consisting of at least the same no. of players as playing in a real-life sports team (e.g. 5 in basketball, 7 in kabaddi and 11 in cricket / football)
+\nAll contests are run for at least the duration of one full sports match
+\nNo team changes are allowed by participants after the start of the sports match
+\n\nOn this basis, the Court adjudged that playing on MySure11 constitutes a ‘game of mere skill’, which makes the MySure11 game exempt from the provisions of the Public Gambling Act, 1867 (PGA)."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Finally, the Court held that the MySure11 is a legitimate business activity protected under Article 19(1)(g) of the Constitution of India."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You can find more information on the legality of MySure11 and Fantasy Sports in India on the website of the Indian Federation of Sports Gaming (IFSG): www.ifsg.in. IFSG is India’s first and only self-regulatory Sports Gaming industry body formed to protect consumer interest and create standardised best practices in the Sports Gaming industry."
+                android:theme="@style/static_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

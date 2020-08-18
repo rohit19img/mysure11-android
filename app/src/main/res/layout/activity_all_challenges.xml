@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AllChallengesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/back"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_back"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IND vs AUS"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    android:id="@+id/matchName"
+                    android:fontFamily="@font/lato_bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="05 : 18 : 32"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/lato_regular"
+                    android:textSize="15dp"
+                    android:id="@+id/matchTime"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_wallet"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/wallet"/>
+
+        </LinearLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/swipeRefreshLayout">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:paddingBottom="45dp"
+                android:clipToPadding="false"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:descendantFocusability="blocksDescendants"
+                        android:id="@+id/ll"/>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        android:id="@+id/bottom_sheet1"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="8dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingBottom="45dp"
+                android:clipToPadding="false"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/colorPrimary"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Close"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:padding="8dp"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:id="@+id/closeFilter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Filters"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:padding="8dp"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/lato_regular"/>
+
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="Reset"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:padding="8dp"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:id="@+id/resetFilter"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:text="Entry"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/lato_semibold"
+                    android:padding="8dp"/>
+
+                <com.img.mysure11.Extras.ExpandableHeightGridView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/entryGrid"
+                    android:numColumns="2"
+                    android:padding="8dp"
+                    android:horizontalSpacing="4dp"
+                    android:verticalSpacing="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:text="Number of Teams"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/lato_semibold"
+                    android:padding="8dp"/>
+
+                <com.img.mysure11.Extras.ExpandableHeightGridView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/numberOfTeamsGrid"
+                    android:numColumns="2"
+                    android:padding="8dp"
+                    android:horizontalSpacing="4dp"
+                    android:verticalSpacing="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:text="Prize Pool"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/lato_semibold"
+                    android:padding="8dp"/>
+
+                <com.img.mysure11.Extras.ExpandableHeightGridView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/prizePoolGrid"
+                    android:numColumns="2"
+                    android:padding="8dp"
+                    android:horizontalSpacing="4dp"
+                    android:verticalSpacing="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:text="Contest Type"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/lato_semibold"
+                    android:padding="8dp"/>
+
+                <com.img.mysure11.Extras.ExpandableHeightGridView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/contestTypeGrid"
+                    android:numColumns="2"
+                    android:padding="8dp"
+                    android:horizontalSpacing="4dp"
+                    android:verticalSpacing="4dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Apply"
+                android:textSize="14dp"
+                android:textAllCaps="true"
+                android:fontFamily="@font/lato_semibold"
+                android:id="@+id/btnApply"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:elevation="3dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_grad"
+                android:layout_gravity="center"/>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

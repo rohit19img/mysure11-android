@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.UserFirstDetailsActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="50dp"
+                style="@style/StyledTilEditText"
+                android:layout_height="wrap_content"
+                android:id="@+id/teamName">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15dp"
+                    android:padding="10dp"
+                    android:textColorHint="@color/text_color"
+                    android:fontFamily="@font/lato_regular"
+                    android:hint="Team Name"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Birth"
+                    android:fontFamily="@font/lato_regular"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/text_color"
+                    android:paddingBottom="3dp"
+                    android:paddingRight="10dp"
+                    android:textSize="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Birth"
+                    android:id="@+id/dob"
+                    android:fontFamily="@font/lato_regular"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/font_color"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="10dp"
+                    android:textSize="13dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="@color/text_color"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="State"
+                android:padding="5dp"
+                android:fontFamily="@font/lato_regular"
+                android:textSize="10dp"
+                android:textColor="@color/text_color"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/text_color"
+                android:layout_marginTop="3dp"
+                android:textSize="13dp"
+                android:entries="@array/india_states"
+                android:layout_marginRight="8dp"
+                android:id="@+id/state"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To Play pay-to-pay contests, you need to be 18 Years or above, and not a resident of Assam,Nagaland,Odisha,Sikkim or Telangana."
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/lato_regular"
+                android:textSize="14dp"
+                android:padding="5dp"
+                android:textColor="@color/text_color"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:text="Create Profile"
+                android:textSize="16dp"
+                android:fontFamily="@font/lato_semibold"
+                android:textAllCaps="false"
+                android:id="@+id/btnCreateProfile"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:layout_margin="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_grad"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

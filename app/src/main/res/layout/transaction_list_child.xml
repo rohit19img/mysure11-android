@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/infoLL"
+        android:padding="5dp"
+        android:background="@color/com_facebook_button_login_silver_background_color"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+            android:fontFamily="@font/lato_regular"
+            android:id="@+id/transactionID"
+            android:padding="8dp"
+            android:textSize="14dp"
+            android:text="Transaction id : VB18/rt"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+            android:id="@+id/teamName"
+            android:fontFamily="@font/lato_regular"
+            android:padding="8dp"
+            android:textSize="14dp"
+            android:text="Team Name : XYZ"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

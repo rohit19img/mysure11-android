@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimary"
+    android:layout_height="48dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/back"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_back"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/white"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/profileImage"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_weight="1"
+        android:text="Title"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:fontFamily="@font/lato_semibold"
+        android:id="@+id/title"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@drawable/ic_wallet"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/wallet"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@drawable/ic_filter"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/filter"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@drawable/ic_notification"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone"
+        android:id="@+id/notification"/>
+</LinearLayout>

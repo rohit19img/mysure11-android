@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:elevation="3dp"
+    android:padding="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="45dp"
+        android:padding="5dp"
+        android:layout_height="45dp"
+        android:layout_margin="4dp"
+        android:id="@+id/userImage"
+        android:src="@drawable/avtar"
+        android:layout_gravity="center_vertical"/>
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="4dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team 1"
+            android:padding="4dp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/lato_semibold"
+            android:id="@+id/teamName"
+            android:textColor="@color/text_color"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="4dp"
+            android:layout_height="wrap_content"
+            android:text="You Won rs 200"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/lato_regular"
+            android:id="@+id/winAmount"
+            android:visibility="gone"
+            android:textColor="@color/colorAccent"
+            android:textSize="14dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="right"
+        android:layout_gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+                android:text="#1"
+                android:id="@+id/rank"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/lato_bold"
+                android:padding="3dp"
+                android:textSize="14dp"/>
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:id="@+id/indicatorIcon"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_up_down1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_font_color"
+            android:text="180.0 Points"
+            android:id="@+id/points"
+            android:fontFamily="@font/lato_regular"
+            android:padding="3dp"
+            android:textSize="13dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

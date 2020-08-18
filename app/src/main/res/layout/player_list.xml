@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_height="50dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/img"
+                    android:src="@drawable/player_selected"
+                    android:layout_height="50dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:padding="1dp"
+                    android:elevation="5dp"
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/bcci"
+                    android:id="@+id/teamImage"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_primary"
+                    android:text="IND"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/lato_regular"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:textColor="@color/white"
+                    android:id="@+id/teamName"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_weight="1.6"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:paddingBottom="1dp"
+                    android:id="@+id/playerName"
+                    android:layout_gravity="center_vertical"
+                    android:text="Player Name"
+                    android:textColor="@color/text_color"
+                    android:singleLine="true"
+                    android:fontFamily="@font/lato_semibold"
+                    android:textSize="14dp"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/deselectedLL"
+                    android:paddingTop="3dp"
+                    android:visibility="gone"
+                    android:paddingBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/player_deselected"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10dp"
+                        android:textColor="@color/text_color"
+                        android:paddingLeft="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Not in Playing XI"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/selectedLL"
+                    android:visibility="gone"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/player_selected"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10dp"
+                        android:textColor="@color/text_color"
+                        android:paddingLeft="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="In Playing XI"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/role"
+                        android:layout_gravity="center_vertical"
+                        android:text="AUS"
+                        android:fontFamily="@font/lato_regular"
+                        android:textColor="@color/font_color"
+                        android:textSize="12dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0px"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:text="875"
+                android:id="@+id/point"
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                android:fontFamily="@font/lato_regular"
+                android:textSize="12dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_weight="0.8"
+                android:text="8.4 cr"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:id="@+id/credit"
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                android:fontFamily="@font/lato_regular"
+                android:textSize="12dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#e0e0e0"/>
+
+            <ImageView
+                android:layout_width="0px"
+                android:layout_weight="0.6"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/select"
+                android:paddingTop="8dp"
+                android:src="@drawable/ic_minus_circle"
+                android:paddingBottom="8dp"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="50dp"
+            android:background="#e0e0e0"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/enabledBG"
+        android:visibility="gone"
+        android:background="#ddffffff"/>
+
+</RelativeLayout>

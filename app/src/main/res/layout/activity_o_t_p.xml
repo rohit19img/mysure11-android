@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.OTPActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="14dp"
+            android:textColor="@color/text_color"
+            android:fontFamily="@font/lato_regular"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:text=""
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="6dp"
+            android:layout_margin="6dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_height="wrap_content"
+                    android:text="Enter the OTP you received"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="15sp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <com.mukesh.OtpView
+                        android:id="@+id/otp"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textColor="@color/text_color"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/lato_regular"
+                        app:itemCount="4"
+                        app:lineColor="@color/yellow2"
+                        app:viewType="rectangle"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="14dp"
+            android:id="@+id/timer"
+            android:fontFamily="@font/lato_regular"
+            android:textColor="@color/yellow2"
+            android:text="Didn't received the OTP?"/>
+
+    </LinearLayout>
+
+</LinearLayout>

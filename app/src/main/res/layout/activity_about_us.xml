@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Static.AboutUsActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About MySure11"
+                android:theme="@style/static_title"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MySure11 is executing its vision of ‘Make Sports Better’ by providing multiple avenues for fans to deeply engage with the sports they love through fantasy sports, content, commerce, experiences and events, among others."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VISION AND MISSION"
+                android:theme="@style/static_title"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="“A journey without a vision and a mission lead you nowhere.”"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Making online fantasy sports gaming a thrilling experience among sports lovers is what we look forward to achieve. Bringing in quite a revolution in the online fantasy sports gaming industry is our ultimate mission. MySure11 plans to expand the magic of online fantasy sports gaming to boundaries of tier-2 &amp; tier-3 cities. We work with a simple motto of allowing people to gel-up with real-time matches &amp; feel the same thrill, amazement at their fingertips."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Help &amp; Support"
+                android:theme="@style/static_title"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="24x7 customer support"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:fontFamily="@font/lato_semibold"
+                android:textColor="@color/font_color"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+91-xxxxxxxxxxx"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/text_color"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Write to us any complaint or feedback"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:fontFamily="@font/lato_semibold"
+                android:textColor="@color/font_color"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="support@mysure11.com"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/text_color"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Disclaimer"
+                android:theme="@style/static_title"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MySure11 is neither associated or affiliated nor claims any association or affiliation in any manner with any sports governing leagues or authorities,"
+                android:theme="@style/static_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

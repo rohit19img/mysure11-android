@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "480704803156",
+    "firebase_url": "https://mysure11.firebaseio.com",
+    "project_id": "mysure11",
+    "storage_bucket": "mysure11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480704803156:android:35e001f3013f3d3d7558c1",
+        "android_client_info": {
+          "package_name": "com.img.mysure11"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480704803156-vjs4sma64a007k3d4l4uh24iiu60n16k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.img.mysure11",
+            "certificate_hash": "132190976f75048797751ac93ed2e30ffba0367e"
+          }
+        },
+        {
+          "client_id": "480704803156-9rbfkajup870ie0on6nfe3th5bdah3kc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.img.mysure11",
+            "certificate_hash": "23d9b69a2f8cc511400d80e56fc65800bb14e4cd"
+          }
+        },
+        {
+          "client_id": "480704803156-j9uvd7riiei0ptuqc527fhv9p20uejvm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCceztmlupJNpa3T5QZLrYb_fOOIwc51IY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480704803156-j9uvd7riiei0ptuqc527fhv9p20uejvm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

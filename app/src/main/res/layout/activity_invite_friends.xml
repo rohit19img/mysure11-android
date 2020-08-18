@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Static.InviteFriendsActivity">
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:src="@drawable/refer"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:fontFamily="@font/lato_semibold"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17dp"
+                    android:gravity="center"
+                    android:textColor="@color/text_color"
+                    android:text="Kick start your friend's MySure11 journey!"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="For every friend that you will reffer, you both get ₹100 for free!"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/text_color"
+                    android:fontFamily="@font/lato_regular"
+                    android:textSize="12dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:elevation="3dp"
+                    app:cardCornerRadius="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Share your invite code"
+                            android:textAllCaps="true"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:textColor="@color/font_color"
+                            android:fontFamily="@font/lato_regular"
+                            android:textSize="14dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="EC2951"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/lato_semibold"
+                            android:id="@+id/code"
+                            android:background="@drawable/dash_border"
+                            android:textIsSelectable="true"
+                            android:textColor="@color/text_color"
+                            android:textSize="25dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Invite Your Friends"
+                            android:background="@drawable/btn_green"
+                            android:gravity="center"
+                            android:textSize="14dp"
+                            android:fontFamily="@font/lato_semibold"
+                            android:id="@+id/more"
+                            android:padding="10dp"
+                            android:layout_margin="6dp"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="8dp"
+                android:background="@color/text_color"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/joinedLL"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:paddingTop="17dp"
+                        android:paddingBottom="17dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:id="@+id/totalJoined"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingRight="12dp"
+                    android:src="@drawable/ic_right"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/text_color"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

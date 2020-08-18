@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:elevation="3dp"
+    android:padding="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="45dp"
+            android:padding="5dp"
+            android:layout_height="45dp"
+            android:layout_margin="4dp"
+            android:id="@+id/userImage"
+            android:layout_gravity="center_vertical"/>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:id="@+id/teamLL"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team 1"
+                android:fontFamily="@font/lato_semibold"
+                android:id="@+id/teamName"
+                android:textColor="@color/text_color"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team 1"
+                android:fontFamily="@font/lato_regular"
+                android:id="@+id/teamNumber"
+                android:textColor="@color/text_color"
+                android:textSize="11dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:src="@drawable/ic_switch_team"
+        android:padding="10dp"
+        android:id="@+id/switchTeam"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"/>
+
+</LinearLayout>

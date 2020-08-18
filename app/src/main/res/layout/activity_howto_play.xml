@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Static.HowtoPlayActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Introduction"
+                android:theme="@style/static_title"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MySure11 is India’s biggest Fantasy Sports platform with 8 Crore+ users playing Fantasy Cricket, Football, Kabaddi, Basketball, Hockey and Volleyball. MySure11 helps Indian sports fans actively engage with and showcase knowledge of the sports they love. Fans can create their own team of real-life players from upcoming matches, score points based on their on-field performance and compete with other fans."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MySure11 is played by using your sport knowledge and skill. You can pick your own team made up of real players for Cricket, Football, Kabaddi &amp; NBA. Create your team within a maximum budget of 100 credits. Your team earns points based on your chosen players' performance in the real-life matches. It's time to showcase your skill and go for glory!"
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Follow these 5 easy steps to get started:"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select A Match:"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select any of the upcoming matches from any of the current or upcoming cricket series"
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Your Team:"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Use your sports knowledge and showcase your skills to create your MySure11 team within a budget of 100 credits"
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Join a Contest:"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Join any MySure11 free or cash contest to win cash and the ultimate bragging rights to showoff your improvement in the Free/Skill contests on MySure11!"
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Follow the Match:"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Watch the real match and track your fantasy scorecard (updated every 2 minutes)"
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Withdraw your Winnings:"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Instantly withdraw your winnings from your MySure11 account (One Time Verification required)"
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Your Team"
+                android:theme="@style/static_title"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step 1: Select a Match"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select any upcoming match from the list of ongoing and upcoming cricket series and click on the ‘Create Team’ button."
+                android:theme="@style/static_content"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/matches_cricket"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create your MySure11 team by picking 11 players as per the following combinations (C1,C2,C3...) within a budget of 100 credits."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step 2: Create your Team"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select players for your MySure11 team from all 4 of the categories mentioned below:
+
+\nWK - Wicket-keeper
+
+\nBAT - Batsmen
+
+\nBWL - Bowlers
+
+\nAR - All-rounders
+
+\nCheck player info by clicking on the player image.
+
+\nSort players as per their teams, credits or points."
+                android:theme="@style/static_content"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/cricket_players"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keep an eye on:
+
+\nNumber of players added to your team
+
+\nAvailable credits
+
+\nThe deadline for team submission"
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step 3: Select your MySure11 team’s Captain &amp; Vice Captain"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="After creating your MySure11 team, choose a Captain &amp; Vice Captain for the team."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Captain - Gets 2x points scored by him in the actual game"
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vice Captain - Gets 1.5x points scored by him in the actual game"
+                android:theme="@style/static_content"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/cricket_c_vc"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step 4: Creating multiple teams"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You can create upto 11 teams per match and choose to join a contests with any of the teams created!"
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click on 'CREATE TEAM' for creating next team"
+                android:theme="@style/static_content"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/cricket_teams"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Managing Your Team"
+                android:theme="@style/static_title"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You can make as many changes to your MySure11 teams as you like until the deadline of that match!"
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You can also change your Captain or Vice Captain before the deadline of the match. Select the “Edit Team” button to make changes to your team."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Make sure you keep an eye on which of your players are playing the match and keep your session updated at all times."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account Balance"
+                android:theme="@style/static_title"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="350dp"
+                android:src="@drawable/my_account"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You can view, withdraw or deposit money into your MySure11 account anytime by going to the “My Account” link."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You will need to go through a One Time Account Verification process before you withdraw any money from your MySure11 account. Don’t worry – this process wont take time and will not be repeated unless you change any of your details."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Money in your MySure11 account is divided into 3 categories:"
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unutilized: If you have deposited any amount but have not yet joined any league using this amount, it will be categorized as Unutilized in your MySure11 account"
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Winnings: The amount of money earned as “winnings” through any cash leagues joined. No processing fees will be deducted if you wish to withdraw any amount from your Winnings!"
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cash Bonus: It’s on us! This is given by MySure11 to you, and can be used to join any public cash leagues and win more cash! This cash bonus comes with an expiry date so make full use of this freebie and get started!"
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FAQ's"
+                android:theme="@style/static_title"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is MySure11?"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MySure11 is the world’s #1 single-match fantasy sports game of skill offering fantasy cricket &amp; football to an exponentially growing user base of over 5 million gamers."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How do I register?"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="That’s Easy! Log on to the MySure11 register yourself by filling out a valid email id and setting a password or by clicking on ‘Instant Connect with Facebook’ to register with your Facebook account or ‘Instant Connect with Google’ to register with your Google account. After you’re through with the registration, you can follow the simple starter guide, which will take you through the simple steps of creating your Fantasy Cricket Team and then joining Contests to win Cash. You can also go through the ‘How to Play’ page of MySure11."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Why can’t I login to my account?"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please check whether your registered email address and password are entered correctly and try logging in again. If you've forgotten your password, click on 'Forgot Password', enter your registered email ID and we’ll send you a link to reset your password on it within a few minutes! If you've forgotten your registered email id, reach out to us at Contact Us."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How do I change my password?"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="When you are logged in, head to ‘My Profile’, select ‘Change Password’ &amp; click on ‘Save Changes’."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How many Fantasy Cricket teams can I create with the same email Id?"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You can create only one account with one email id on MySure11. Creation of multiple accounts by a single gamer is strictly prohibited and violates our FairPlay policy."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Can I update / edit my information?"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You can edit most of your information on MySure11. Here’s how:
+\nOn the MySure11 app, head to ‘My Profile’, scroll to the bottom of the page and tap on the ‘Full Profile’ button next to the Personal Details section.
+\nOn the desktop/mobile web, you can Contests’. You will be able to update/edit your full name and mobile number. You can also edit your date of birth, address and state if your MySure11 account is ‘Unverified’. Remember, the team name chosen by you and the email id registered once cannot be changed."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I’m sure I've got the right username and password but I still can't login."
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="That’s strange! If you are sure that you are a registered user on MySure11 and are entering the correct details but are still unable to login please drop us an email us at Contact Us. Our Customer Care team will be more than happy to assist you."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I did not get any email with the change password link."
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="a) It could have been marked as Spam mail by your mailbox. Please check your spam mail and mark the email from MySure11 as ‘Not Spam’. Also, add fantasycricket@MySure11.com to your contacts so that you receive our email the next time
+\nb) You may have entered a different email id than the one used by you during registration. For any assistance, please drop us an email at Contact Us."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I don't know much about Fantasy cricket – can I still play?"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If you are not too sure about your cricketing knowledge, don’t worry. You can gain some valuable experience and knowledge as you play more Fantasy Cricket. You can also check out our MySure11 ‘Fancode’ to gain a better insight into the matches and players. You can practice with the Free leagues before participating in the Cash &amp; private leagues."
+                android:theme="@style/static_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Static.FairPlayActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Transparency"
+                android:theme="@style/static_title"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EQUAL OPPORTUNITY"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All users in selecting a fantasy team for any match are provided with the same budget of 100 credits. All users have access to the database of players and are bound by the same rules while picking the composition of their respective teams, such as the maximum/minimum limits on the number of batsmen, bowlers, wicket-keeper and all-rounders and limits placed on the number of players that can be picked from a particular real life team."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FIXED PLAYER CREDITS"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The credits required to pick a player are locked for each particular contest and match. The price for each player does not fluctuate based on the performance of the player or their real life team during the particular contest or the match."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DEADLINE"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MySure11 initiates deadline at the official match start time for all featured sports. The teams cannot be updated/edited post the deadline of the respective match. This deadline is put in place to ensure continued level playing field for all our users."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="COMPETITOR TRACKER"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You can conveniently download the composition of every team in your contest after the deadline in 1-click. Just go to My Contests tab and you will see a Download icon. Click on this and you will be able to view and/or save all teams in that contest. This feature allows you to keep track of your competition and never have to worry about any changes in anyone’s team post deadline!"
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WINNER DECLARATION"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We love to see you win! To ensure you can play on MySure11 and compete with other users with full confidence, we have taken the following measures:
+\nThe scoring system used for calculating points is clearly illustrated and displayed on our platforms
+\nThe applicable payouts for winners of each contest are clearly mentioned
+\nAny winnings/payouts are promptly processed and credited to the User's account
+\nScores for each match are sourced from accurate scoring feeds provided by reputable third party service providers"
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trust"
+                android:theme="@style/static_title"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GENUINE, VERIFIED USERS"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We strive to ensure that we only have genuine users playing on MySure11. To facilitate this, we have put in place strict policies and protocols to check any violation of MySure11 FairPlay. Before withdrawing their winnings, the Users are required to verify their accounts &amp; furnish their valid government authorized ID Proof - PAN Card &amp; bank account details. These details and documents are collected and verified with the respective authorities."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SAFE &amp; SECURE PAYMENTS"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We work with trusted third party payment gateways with 3-D secure authentication to ensure safety and security of all financial transactions. We do not store your credit/debit card details with us."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EMPLOYEES RESTRICTIONS"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our employees are strictly prohibited from participating in any paid contests on MySure11. No inside jobs!"
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LEGAL"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MySure11 is a skill based platform and is offered in accordance with Indian laws. There are no shortcuts or cheat codes for quick and easy wins. Visit the Legality page on MySure11 to know more."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="COMMUNICATION"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We understand that being accessible to our users builds trust and provides security. So, we've made it easier for them to Contact Us so that their queries are addressed on a timely basis."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Responsibility"
+                android:theme="@style/static_title"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PROTECT USER INFO"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our users trust us with their personal documents like PAN Cards and Bank details. We value &amp; uphold that trust in high esteem. The information shared with us is only used for the user verification purposes and is never disclosed to any outside parties."
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RESPONSIBLE PLAY"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We notify users in case their accrued losses exceed ₹25,000 (applicable to Indian users only)
+\nWe do not allow users below 18 years of age to play in the pay-to-play contests on MySure11
+\nWe don’t allow our users to participate in more than 500 pay-to-play contests in a single match"
+                android:theme="@style/static_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NO CASH TRANSACTIONS"
+                android:theme="@style/static_subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We do not allow or promote cash transactions on MySure11"
+                android:theme="@style/static_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

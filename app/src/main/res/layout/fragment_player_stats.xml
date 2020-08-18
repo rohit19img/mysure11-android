@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.PlayerStatsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scorecard"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:elevation="5dp"
+            android:background="@color/white"
+            android:padding="3dp">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_weight="2.5"
+                android:textColor="@color/font_color"
+                android:text="Player"
+                android:id="@+id/player"
+                android:textSize="13dp"
+                android:fontFamily="@font/lato_semibold"
+                android:padding="3dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:textColor="@color/font_color"
+                android:text="Selection"
+                android:id="@+id/selection"
+                android:gravity="center"
+                android:textSize="13dp"
+                android:fontFamily="@font/lato_semibold"
+                android:padding="3dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:textColor="@color/font_color"
+                android:text="Points"
+                android:gravity="right"
+                android:id="@+id/points"
+                android:textSize="13dp"
+                android:fontFamily="@font/lato_semibold"
+                android:padding="3dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/font_color"
+            android:dividerHeight="1px"
+            android:id="@+id/scoreCard"/>
+
+    </LinearLayout>
+
+</FrameLayout>

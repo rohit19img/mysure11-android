@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ChooseTeamActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose team to join this contest with"
+            android:fontFamily="@font/lato_semibold"
+            android:padding="15dp"
+            android:textAllCaps="true"
+            android:id="@+id/text"
+            android:textSize="13dp"
+            android:textColor="@color/text_color"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/teamList"
+            android:layout_weight="1"
+            android:choiceMode="singleChoice"
+            android:listSelector="@color/colorAccent"
+            android:dividerHeight="3px"
+            android:divider="#0fff"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:text="Create new team"
+                android:background="@color/colorAccent"
+                android:textColor="@color/white"
+                android:id="@+id/btnCreateTeam"
+                android:fontFamily="@font/lato_semibold"
+                android:padding="11dp"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:textAllCaps="true"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:text="Join"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:padding="11dp"
+                android:fontFamily="@font/lato_semibold"
+                android:id="@+id/btnJoin"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

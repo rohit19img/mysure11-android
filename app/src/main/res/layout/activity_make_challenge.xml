@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MakeChallengeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/back"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_back"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IND vs AUS"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    android:id="@+id/matchName"
+                    android:fontFamily="@font/lato_bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="05 : 18 : 32"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/lato_regular"
+                    android:textSize="15dp"
+                    android:id="@+id/matchTime"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_wallet"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/wallet"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="6dp"
+                android:elevation="6dp"
+                android:layout_margin="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        style="@style/StyledTilEditText"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/lato_regular"
+                        app:helperTextTextAppearance="@style/helperText"
+                        app:helperText="Give your contest a cool name"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/name">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Give your contest a name"
+                            android:textSize="14dp"
+                            android:inputType="text"
+                            android:textColor="@color/text_color"
+                            android:fontFamily="@font/lato_regular"
+                            android:textColorHint="@color/text_color"
+                            android:padding="10dp"
+                            android:gravity="left"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        style="@style/StyledTilEditText"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/lato_regular"
+                        app:helperTextTextAppearance="@style/helperText"
+                        app:helperText="Min 0"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/amount">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Total winning amount"
+                            android:textSize="14dp"
+                            android:inputType="number"
+                            android:maxLength="5"
+                            android:textColor="@color/text_color"
+                            android:fontFamily="@font/lato_regular"
+                            android:textColorHint="@color/text_color"
+                            android:padding="10dp"
+                            android:gravity="left"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        style="@style/StyledTilEditText"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/lato_regular"
+                        app:helperTextTextAppearance="@style/helperText"
+                        app:helperText="Min 2"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/numWinners">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Contest Size"
+                            android:textSize="14dp"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:textColor="@color/text_color"
+                            android:fontFamily="@font/lato_regular"
+                            android:textColorHint="@color/text_color"
+                            android:padding="10dp"
+                            android:gravity="left"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingRight="10dp"
+                            android:fontFamily="@font/lato_semibold"
+                            android:textColor="@color/text_color"
+                            android:layout_gravity="center_vertical"
+                            android:text="Allow friends to join with multiple teams"
+                            android:textSize="12dp"/>
+
+                        <Switch
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/switchMultiple"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="6dp"
+                android:elevation="6dp"
+                android:layout_margin="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="15dp"
+                    android:elevation="6dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="@color/text_color"
+                            android:fontFamily="@font/lato_semibold"
+                            android:text="Entry Fee Per Team :"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color"
+                            android:fontFamily="@font/lato_semibold"
+                            android:textSize="17dp"
+                            android:id="@+id/entryFee"
+                            android:layout_marginLeft="15dp"
+                            android:text="₹ 0.0"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="@color/text_color"
+                        android:fontFamily="@font/lato_semibold"
+                        android:gravity="center"
+                        android:text="Entry fee is calculated based on total prize amount &amp; contest size."/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:id="@+id/btnCreate"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:textSize="16dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/lato_semibold"
+                android:textColor="@color/white"
+                android:text="Create Contest &amp; Invite friends!"
+                android:background="@drawable/btn_grad"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

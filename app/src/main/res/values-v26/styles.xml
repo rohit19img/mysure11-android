@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="static_title" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:justificationMode">inter_word</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="static_content" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:justificationMode">inter_word</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="static_subtitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:justificationMode">inter_word</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+</resources>

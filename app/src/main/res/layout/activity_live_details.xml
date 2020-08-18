@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LiveDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/back"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_back"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IND vs AUS"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:id="@+id/matchName"
+                android:fontFamily="@font/lato_bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completed"
+                android:textColor="@color/white"
+                android:fontFamily="@font/lato_regular"
+                android:textSize="15dp"
+                android:id="@+id/matchStatus"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="5dp"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="3dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/seriesName"
+                android:text="-"
+                android:textColor="@color/text_color"
+                android:textSize="14dp"
+                android:fontFamily="@font/lato_regular"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:padding="4dp"
+                            android:background="@drawable/white_circle"
+                            android:elevation="5dp"
+                            android:src="@drawable/bcci"
+                            android:id="@+id/teamLogo1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/team1Name"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:fontFamily="@font/lato_semibold"
+                            android:textSize="14dp"
+                            android:textColor="@color/text_color"
+                            android:text="India"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:fontFamily="@font/lato_semibold"
+                            android:textSize="14dp"
+                            android:textColor="@color/text_color"
+                            android:text=":"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/team1Score"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:fontFamily="@font/lato_semibold"
+                            android:textSize="14dp"
+                            android:textColor="@color/text_color"
+                            android:text="-"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/team1Overs"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:fontFamily="@font/lato_semibold"
+                            android:textSize="12dp"
+                            android:textColor="@color/font_color"
+                            android:text="-"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:padding="4dp"
+                            android:background="@drawable/white_circle"
+                            android:elevation="5dp"
+                            android:src="@drawable/ca"
+                            android:id="@+id/teamLogo2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/team2Name"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:fontFamily="@font/lato_semibold"
+                            android:textSize="14dp"
+                            android:textColor="@color/text_color"
+                            android:text="Australia"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:fontFamily="@font/lato_semibold"
+                            android:textSize="14dp"
+                            android:textColor="@color/text_color"
+                            android:text=":"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/team2Score"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:fontFamily="@font/lato_semibold"
+                            android:textSize="14dp"
+                            android:textColor="@color/text_color"
+                            android:text="-"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/team2Overs"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:fontFamily="@font/lato_semibold"
+                            android:textSize="12dp"
+                            android:textColor="@color/font_color"
+                            android:text="-"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:background="@drawable/green_small_border"
+                    android:text="Completed"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="@font/lato_regular"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="13dp"
+                    android:id="@+id/status"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/font_color"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:id="@+id/matchResult"
+                    android:textColor="@color/font_color"
+                    android:text=""
+                    android:fontFamily="@font/lato_regular"
+                    android:textSize="12dp"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="3dp"
+        android:layout_margin="10dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ll"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Prize pool"
+                        android:paddingBottom="3dp"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:textColor="@color/font_color" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:text="-"
+                        android:fontFamily="@font/lato_semibold"
+                        android:textColor="@color/text_color"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:id="@+id/prizeMoney"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/winnerLL"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/trophy_winner"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Winners"
+                            android:layout_marginLeft="3dp"
+                            android:paddingBottom="3dp"
+                            android:textSize="12dp"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/lato_regular"
+                            android:textColor="@color/font_color" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textSize="16dp"
+                        android:fontFamily="@font/lato_semibold"
+                        android:textColor="@color/colorAccent"
+                        android:id="@+id/numWinners"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Entry Fee"
+                        android:paddingBottom="3dp"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:textColor="@color/font_color" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textSize="16dp"
+                        android:fontFamily="@font/lato_semibold"
+                        android:textColor="@color/text_color"
+                        android:id="@+id/entryFee"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="center_horizontal"
+        app:tabTextAppearance="@style/TabLayoutStyle"
+        android:id="@+id/tab"
+        style="@style/TabLayoutStyle1"
+        app:tabInlineLabel="true"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextColor="@color/gray_font_color"
+        app:tabMode="fixed"
+        app:tabIndicatorHeight="2dp"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorColor="@color/colorPrimary"
+        android:background="@color/white"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:id="@+id/vp"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

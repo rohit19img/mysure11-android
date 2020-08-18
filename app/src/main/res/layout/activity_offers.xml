@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.OffersActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/font_color"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_border"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="4dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Enter Offer Code"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/font_color"
+                android:padding="12dp"
+                android:textSize="14dp"
+                android:id="@+id/offerCode"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apply"
+                android:padding="10dp"
+                android:fontFamily="@font/lato_bold"
+                android:textSize="14dp"
+                android:id="@+id/btnApply"
+                android:textColor="@color/colorAccent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Available Offers"
+            android:textColor="@color/text_color"
+            android:textSize="14dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/offersList"
+        android:scrollbars="none"
+        android:padding="5dp"
+        android:dividerHeight="1px"
+        android:divider="@color/text_color"/>
+
+</LinearLayout>

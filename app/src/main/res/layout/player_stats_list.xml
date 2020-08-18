@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/text_color"
+            android:textSize="14dp"
+            android:textAllCaps="true"
+            android:id="@+id/match_name"
+            android:fontFamily="@font/lato_regular"
+            android:padding="2dp"
+            android:text="TIT Vs WAR"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="12dp"
+            android:padding="2dp"
+            android:textColor="@color/font_color"
+            android:fontFamily="@font/lato_regular"
+            android:id="@+id/match_date"
+            android:text="Jan 30, 2018"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:textSize="14dp"
+        android:id="@+id/points"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/text_color"
+        android:fontFamily="@font/lato_regular"
+        android:text="75"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textSize="14dp"
+        android:id="@+id/selectedBy"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/text_color"
+        android:fontFamily="@font/lato_regular"
+        android:text="30.5%"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

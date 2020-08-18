@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#CF0000</color>
+    <color name="colorPrimaryDark">#A51511</color>
+    <color name="colorAccent">#40CD4F</color>
+
+    <color name="primaryTrans">#44d0302b</color>
+    <color name="tab_text">#FF9797</color>
+
+    <color name="blue">#3759a5</color>
+    <color name="white">#ffffff</color>
+    <color name="text_color">#222222</color>
+    <color name="font_color">#aaaaaa</color>
+    <color name="white_smoke">#f3f3f3</color>
+    <color name="gray_font_color">#888888</color>
+    <color name="colorExtraPrimaryDark">#730805</color>
+    <color name="ct_primary_text">#FE6262</color>
+    <color name="facebook_color">#3b5998</color>
+
+    <color name="yellow1">#FFC400</color>
+    <color name="yellow2">#FF600E</color>
+
+</resources>

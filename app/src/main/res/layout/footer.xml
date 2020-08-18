@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#f0f0f0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/homeLL"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_buildings"
+                android:tint="@color/font_color"
+                android:id="@+id/homeIcon"/>
+
+<!--            <ImageView-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:src="@drawable/home"-->
+<!--                android:tint="@color/font_color"-->
+<!--                android:id="@+id/homeIcon"/>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Home"
+                android:padding="5dp"
+                android:id="@+id/homeText"
+                android:textSize="13dp"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/font_color"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/myMatchesLL"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_cup_new"
+                android:tint="@color/gray_font_color"
+                android:id="@+id/matchesIcon"/>
+
+<!--            <ImageView-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:src="@drawable/ic_cup"-->
+<!--                android:id="@+id/matchesIcon"/>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="My Matches"
+                android:padding="5dp"
+                android:id="@+id/matchesText"
+                android:textSize="13dp"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/font_color"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/profileLL"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:tint="@color/gray_font_color"
+                android:src="@drawable/ic_profile_footer"
+                android:id="@+id/profileIcon"/>
+
+            <!--            <ImageView-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:src="@drawable/profile"-->
+<!--                android:id="@+id/profileIcon"/>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Profile"
+                android:padding="5dp"
+                android:id="@+id/profileText"
+                android:textSize="13dp"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/font_color"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/moreLL"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:tint="@color/gray_font_color"
+                android:src="@drawable/ic_bars"
+                android:id="@+id/moreIcon"/>
+
+<!--            <ImageView-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:src="@drawable/ic_more"-->
+<!--                android:id="@+id/moreIcon"/>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="More"
+                android:padding="5dp"
+                android:id="@+id/moreText"
+                android:textSize="13dp"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/font_color"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
